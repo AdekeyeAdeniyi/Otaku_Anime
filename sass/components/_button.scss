@@ -1,0 +1,43 @@
+
+
+.btn{
+    &:link,
+    &:visited{
+        display: inline-block;
+        padding: 0.8rem 1rem;
+        border-radius: 4px;
+        font-size: $font-size-sm;
+    }
+
+    &-primary {
+        color: $white;
+        background-color: $primary;
+
+        &:active,
+        &:hover{
+            background-color: $primary-dark;
+        }
+    }
+
+    &-secondary {
+        color: $white;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+        &:active,
+        &:hover{
+            border:1px solid $primary;
+        }
+    }
+
+    &-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @include respond(phone-land){
+            flex-direction: row;
+        }
+    }
+}

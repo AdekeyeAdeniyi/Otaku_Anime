@@ -1,0 +1,42 @@
+.nav {
+    display: none;
+    width: 100%;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: column;
+    position: absolute;
+    top: 6.2rem;
+    z-index: 999;
+    background: #2d2d2d;
+    padding: 3rem;
+
+    @include respond(desktop){
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        margin-top: 0;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+    }
+
+    & li {
+        list-style: none;
+
+        & .nav-link{
+            font-size: $font-size-sm;
+
+            &:active,
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+
+    &.show{
+        display: flex;
+    }
+}

@@ -1,0 +1,235 @@
+.wrapper{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url("/images/circles-otaku.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+
+    @include respond(tab){
+        width: 80%;  
+    }
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+    .humburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(desktop){
+            display: none;
+        }
+
+        & .toggler{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+        }
+    }
+
+    & .logo {
+        width: 30%;
+
+        @include respond(phone-land){
+            width: 20%;
+        }
+
+        @include respond(desktop){
+            width: 15%;
+        }
+
+       & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.main{
+    position: relative;
+    height: 80vh;
+    
+    .anime{
+        text-align: center;
+
+        .lead{
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 0 2rem 0;
+
+            @include respond(tab){
+                width: 50%;
+            }
+
+            @include respond(desktop-lg){
+                width: 40%;
+            }
+        }
+    }
+
+
+    .upload{
+        
+        &-image{
+            width: 22rem;
+            height: 18rem;
+            margin: 1.2rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+
+            @include respond(phone-land){
+                width: 30rem;
+                height: 18rem; 
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .result{
+
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem auto 2rem auto;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid $gray-dark;
+            width: fit-content;
+            gap: 2rem;
+
+            @include respond(phone-land){
+                flex-direction: row;
+            }
+        }
+
+        &-image{
+            width: 205px;
+            height: 140px;
+
+            @include respond(phone-land){
+                width: 140px;
+                height: 90px;
+            }
+
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        &-text{
+            p{
+
+                span{
+                    color: $gray-dark;
+                    margin-left: .4rem;
+                }
+            }
+        }
+    }
+}
+
+    
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    font-size: $font-size-sm;
+    cursor: pointer;
+    // margin-top: -7rem;
+    letter-spacing: .1rem;
+    align-items: center;
+    gap: 1rem;
+
+    span{
+        color: $white;
+    }
+}
+
+.history{
+    position: absolute;
+    padding: 2rem 4rem 2rem 2rem;
+    border-radius: 12px;
+    background-color: $white;
+    width: fit-content;
+    right: 0;
+    bottom: 4rem;
+    z-index: 99;
+    display: none;
+
+    &-details{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+
+        .image{
+            width: 60px;
+            height: 60px;
+    
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .text{
+            margin-left: 1.2rem;
+            p{
+                color: $gray-dark;
+            }
+        }
+    }
+
+    &:after{
+        z-index: 1;
+        position: absolute;
+        top: 98.1%;
+        left: 70%;
+        margin-left: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: solid 2rem $white;
+        border-left: solid 2rem transparent;
+        border-right: solid 2rem transparent;
+    }
+
+    &.show{
+        display: block;
+    }
+}

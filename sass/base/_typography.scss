@@ -1,0 +1,41 @@
+h1,.h1{
+    font-size: $h2-font-size;
+    text-align: center;
+
+    @include respond (phone-land){
+        font-size: $h1-font-size;
+    }
+}
+
+h1{
+    font-weight: 400;
+    color: $white;
+}
+
+h3,.h3{
+    font-size: $h4-font-size;
+
+    @include respond (phone-land){
+        font-size: $h3-font-size;
+    }
+}
+
+h3{
+    font-weight: 300;
+}
+
+
+p{
+    font-size: $font-size-sm;
+    color: $gray;
+
+    @include respond (phone-land){
+        font-size: $font-size-md;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: $gray-dark;
+}
