@@ -1,8 +1,9 @@
 .wrapper{
     position: relative;
     height: 100vh;
-    background: linear-gradient($dark--1, $dark--1), url("/images/circles-otaku.svg");
+    background:url("../images/circles-otaku.png");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -12,7 +13,7 @@
     margin: 0 auto;
 
     @include respond(tab){
-        width: 80%;  
+        width: 80%;
     }
 }
 
