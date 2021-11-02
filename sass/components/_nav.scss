@@ -7,7 +7,7 @@
     position: absolute;
     top: 6.2rem;
     z-index: 999;
-    background: #2d2d2d;
+    background: $dark;
     padding: 3rem;
 
     @include respond(desktop){
@@ -31,7 +31,7 @@
 
             &:active,
             &:hover{
-                color: $white;
+                color: $gray-dark;
             }
         }
     }

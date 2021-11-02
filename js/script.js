@@ -3,7 +3,6 @@
 window.addEventListener('load', ()=>{
 
     const nav = document.querySelector('#nav');
-    const history_search = document.querySelector('#history_search');
     const open = document.querySelector('#open');
     const close = document.querySelector('#close');
 
@@ -20,16 +19,20 @@ window.addEventListener('load', ()=>{
         nav.classList.remove('show');
     });
 
-    if(document.querySelector('#search')){
 
-        const searchTag = document.querySelector('#search');
-    
-    
-        searchTag.addEventListener('click', (e) => {
-            e.preventDefault();
-    
-            history_search.classList.toggle('show');
-        });
-    }
+    const container = document.querySelector('.footer');
+
+
+    container.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const id =  e.target.dataset.id;
+
+        if(id == 'close' || id == 'search'){
+            container.querySelector('#history').classList.toggle('show');
+        }
+
+
+    });
 
 });
