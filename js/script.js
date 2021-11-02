@@ -5,6 +5,8 @@ window.addEventListener('load', ()=>{
     const nav = document.querySelector('#nav');
     const open = document.querySelector('#open');
     const close = document.querySelector('#close');
+    const fileUpload = document.querySelector('#input-file');
+    const container = document.querySelector('.footer');
 
     
     open.addEventListener('click', (e)=>{
@@ -19,20 +21,25 @@ window.addEventListener('load', ()=>{
         nav.classList.remove('show');
     });
 
+    if(container){
 
-    const container = document.querySelector('.footer');
+        container.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            const id =  e.target.dataset.id;
+    
+            if(id == 'close' || id == 'search'){
+                container.querySelector('#history').classList.toggle('show');
+            }
+    
+    
+        });
+    }
 
-
-    container.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        const id =  e.target.dataset.id;
-
-        if(id == 'close' || id == 'search'){
-            container.querySelector('#history').classList.toggle('show');
+    if(fileUpload){
+        fileUpload.onchange = () => {
+            window.location.href = "upload.html";
         }
-
-
-    });
+    }
 
 });
