@@ -32,6 +32,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        row-gap: 2rem;
 
         @include respond(phone-land){
             flex-direction: row;
