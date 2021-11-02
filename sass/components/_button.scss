@@ -1,11 +1,10 @@
 
 
 .btn{
-    &:link,
-    &:visited{
-        display: inline-block;
-        border-radius: 4px;
-    }
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
 
     &-primary {
         color: $white;
@@ -48,4 +47,10 @@
         padding: 0.8rem 3.2rem;
         font-size: $font-size-md;
     }
+}
+
+.upload-btn{
+    & input[type=file] {
+        display: none;
+      }
 }
