@@ -4,108 +4,261 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Otaku_Shazam</title>
+    <title>Otaku_Shazam | Homepage </title>
 </head>
 <body>
-    <div class="wrapper">
-       <div class="container">
+    <div class="wrapper" style="height: 82.6vh;">
+        <div class="container">
             <header class="header">
-                <a href="index.html" class="logo">
-                    <img src="images/Otaku TV logo png@4x.png" alt="logo" />
-                </a>
-                <div id="toggle" class="humburger">
-                    <span id="open" class="toggler active">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8h24M4 16h24M4 24h24"/></g></svg>
-                    </span>
-                    <span id="close" class="toggler">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="21" height="21" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30L30 2m0 28L2 2"/></g></svg>
-                    </span>
-                </div>
-                <div id="nav" class="nav">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">About Us</a></li>
-                    <li><a href="#" class="nav-link">Ticket</a></li>
-                    <li><a href="#" class="nav-link">FAQS</a></li>
-                    <li><a href="#" class="nav-link">Contact Us</a></li>
-                    <li><a href="#" class="nav-link">Login</a></li>
-                    <li>
-                        <a href="" class="btn btn-primary btn-sm"> Join us for free</a>
-                    </li>
-                </div>
-            </header>
-
-            <main class="main h-80">
-                <section class="anime">
-                    <h1 class="u-center"> Anime Shazam</h1>
-                    <p class="lead"> Upload photo or video clip of an anime you've seen, and we will tell you what is it.</p>
-                    <div class="upload-btn">
-                        <label class="btn btn-primary btn-md" for='input-file' > Select and upload </label>
-                        <input type="file" id="input-file" />
-                    </div>
-                </section>
-            </main>
-
-            <footer class="footer">
-                 <!-- serach history -->
-                <div id="history" class="history">
-                    <div class='history-header'>
-                        <h3> Previous searches</h3>
-                        <span class="close">
-                            <svg data-id="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.25 17.25L6.75 6.75" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.25 6.75L6.75 17.25" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>    
+                <div class="navigation">
+                    <a href="index.html" class="logo">
+                        <img src="images/Otaku TV logo png@4x.png" alt="logo" />
+                    </a>
+                    <div id="toggle" class="humburger">
+                        <span id="open" class="toggler active">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8h24M4 16h24M4 24h24"/></g></svg>
+                        </span>
+                        <span id="close" class="toggler">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="21" height="21" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30L30 2m0 28L2 2"/></g></svg>
                         </span>
                     </div>
-                    <div class="histrory-info">
-                        <div class="history-details">
-                            <div class="image">
-                                <img src="images/naruto.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <p>80% accurate</p>
-                                <p>Hunter x Hunter</p>
-                            </div>
+                    <div id="nav" class="nav">
+                        <li><a href="#" class="nav-link">Merch</a></li>
+                        <li><a href="#" class="nav-link">Anime-Download</a></li>
+                        <li><a href="#" class="nav-link">Ticket</a></li>
+                        <li><a href="#" class="nav-link">Anime-Shazam</a></li>
+                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div id="owl-carousel" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/slider-1.png" />
+        </div>
+        <div class="item">
+            <img src="images/slider-2.png" />
+        </div>
+        <div class="item">
+            <img src="images/slider-3.png" />
+        </div>
+        <div class="item">
+            <img src="images/slider-4.png" />
+        </div>
+        <div class="item">
+            <img src="images/slider-5.png" />
+        </div>
+        <div class="item">
+            <img src="images/slider-6.png" />
+        </div>
+    </div>
+        <main class="main">
+            <section class="Merch">
+                <div class="container">
+                    <p class="u-center text-gray-3">We are not just your regular TV</p>
+                    <h3 class="text-dark u-center mb">We also bring to you variety of other products and services</h3>
+
+                    <div class="row">
+                        <div class="Merch_image">
+                            <img src="images/photo-1.png" alt="image" />
+                            <img src="images/bacckground-1.png" class="overlay" alt="image" />
                         </div>
-                        <div class="history-details">
-                            <div class="image">
-                                <img src="images/naruto.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <p>80% accurate</p>
-                                <p>Hunter x Hunter</p>
-                            </div>
+                        <div class="Merch_info">
+                            <h2 class="text-dark"> Otaku Merch </h2>
+                            <p class="text-gray-3 py-3">
+                                Nibh sed pretium, dictumst arcu varius platea ut diam. Ut tincidunt gravida mi feugiat ultrices. Amet pharetra, nullam volutpat ultrices pulvinar. Rhoncus iaculis massa eget ut volutpat senectus tincidunt faucibus at. Vel maecenas arcu velit metus dignissim risus quis nibh duis. Arcu quis non nulla ipsum, nunc aliquam, eget. In ultrices morbi vitae libero, sed praesent vel velit aliquet. 
+                            </p>
+                            <button type="button" class="btn btn-primary btn-md">Visit our store</button>
                         </div>
-                        <div class="history-details">
-                            <div class="image">
-                                <img src="images/naruto.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="Shazam">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="Shazam_info">
+                                <h2 class="text-white"> Anime Shazam </h2>   
+                                <p class="py-3 text-gray-1">Nibh sed pretium, dictumst arcu varius platea ut diam. Ut tincidunt gravida mi feugiat ultrices. Amet pharetra, nullam volutpat ultrices pulvinar. Rhoncus iaculis massa eget ut volutpat senectus tincidunt faucibus at. Vel maecenas arcu velit metus dignissim risus quis nibh duis. Arcu quis non nulla ipsum, nunc aliquam, eget. In ultrices morbi vitae libero, sed praesent vel velit aliquet. </p>
+                                <button type="button" class="btn btn-primary btn-md"> Try it out</button>
                             </div>
-                            <div class="text">
-                                <p>80% accurate</p>
-                                <p>Hunter x Hunter</p>
-                            </div>
-                        </div>
-                        <div class="history-details">
-                            <div class="image">
-                                <img src="images/naruto.png" alt="" />
-                            </div>
-                            <div class="text">
-                                <p>80% accurate</p>
-                                <p>Hunter x Hunter</p>
+                            <div class="result">
+                                <h3 class="u-center text-white"> Result </h3>
+                                <div class="result-info">
+                                    <div class="result-image">
+                                        <img src="images/naruto.png" alt="result-image" />
+                                    </div>
+                                    <div class="result-text">
+                                        <p class="text-white"> 80% accurate</p>
+                                        <p class="text-white"> Anime name: <span class="text-gray-2">Hunter x Hunter</span></p>
+                                        <p class="text-white"> Result was from: <span class="text-gray-2">episode 7</span></p>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-primary btn-sm" > Get this anime </a>
+                                    <a href="index.html" class="btn btn-secondary btn-secondary-light btn-sm" > Shazam another anime </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="white"><path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/><path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/><path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/></g></svg>
-                <span id="search"  data-id="search">Search history</span>
-            </footer>
-       </div>
-    </div>
+            </section>
 
-    <!-- script -->
-    <script src="js/script.js"></script>
+            <section class="Download">
+               <div class="container">
+                <div class="row">
+                    <div class="Download_image">
+                        <img src="images/photo-2.png" alt="image" />
+                        <img src="images/bacckground-1.png" class="overlay" alt="image" />
+                    </div>
+                    <div class="Download_info">
+                        <h2 class="text-dark"> Anime Download </h2>
+                        <p class="py-3 text-gray-3"> Nibh sed pretium, dictumst arcu varius platea ut diam. Ut tincidunt gravida mi feugiat ultrices. Amet pharetra, nullam volutpat ultrices pulvinar. Rhoncus iaculis massa eget ut volutpat senectus tincidunt faucibus at. Vel maecenas arcu velit metus dignissim risus quis nibh duis. Arcu quis non nulla ipsum, nunc aliquam, eget. In ultrices morbi vitae libero, sed praesent vel velit aliquet.  </p>
+                        <button type="button" class="btn btn-primary btn-md"> Start downloading</button>
+                    </div>
+                </div>
+               </div>
+            </section>
+
+            <section class="Tickets">
+                <div class="container">
+                    <div class="row">
+                        <div class="Tickets_image order-2">
+                            <img src="images/photo-3.png" alt="image" />
+                            <img src="images/bacckground-2.png" class="overlay" alt="image" />
+                        </div>
+                        <div class="Tickets_info order-1">
+                            <h2 class="text-dark"> Tickets </h2>
+                            <p class="py-3 text-gray-3"> Nibh sed pretium, dictumst arcu varius platea ut diam. Ut tincidunt gravida mi feugiat ultrices. Amet pharetra, nullam volutpat ultrices pulvinar. Rhoncus iaculis massa eget ut volutpat senectus tincidunt faucibus at. Vel maecenas arcu velit metus dignissim risus quis nibh duis. Arcu quis non nulla ipsum, nunc aliquam, eget. In ultrices morbi vitae libero, sed praesent vel velit aliquet.  </p>
+                            <button type="button" class="btn btn-primary btn-md"> Get your ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="About">
+               <div class="container">
+                    <h1 class="text-white u-center"> Who We Are </h1>
+                    <p class="u-center text-gray-1"> Aliquet feugiat mauris donec aliquam a aenean faucibus. Viverra adipiscing montes, etiam faucibus nisi, facilisi pellentesque. Facilisis ut aliquam massa in enim tortor cras habitasse. Molestie iaculis aliquet risus, augue amet amet amet, nunc, arcu. Eget lorem neque, lectus sollicitudin venenatis at nunc.
+                        Tristique in iaculis pellentesque netus lectus ultrices tellus id malesuada. Risus, vulputate eu augue nisl in porttitor. Felis vivamus lorem egestas sed orci, at pellentesque pellentesque leo. Ultricies auctor non augue curabitur interdum. Habitasse consectetur.</p>
+                   <div class="u-center">
+                    <button type="button" class="btn btn-primary btn-lg"> Be part of our community </button>
+                   </div>
+               </div>
+            </section>
+
+            <section class="testimonies">
+                <div class="container">
+                    <div class="testimonies_feedback">
+                        <div class="u-center">
+                            <h1 class="text-primary"> 21+ </h1>
+                            <p class="text-gray-2"> Otakus </p>
+                        </div>
+                        <div class="u-center">
+                            <h1 class="text-primary"> 90 </h1>
+                            <p class="text-gray-2"> Merch Variants </p>
+                        </div>
+                        <div class="u-center">
+                            <h1 class="text-primary"> 200+ </h1>
+                            <p class="text-gray-2"> Anime for Download </p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="testimonies_details__info">
+                            <h2> Feedbacks from members </h2>
+                            <p class="py-1"> From our contents to our services they love what we do and here’s what they have to say about OTAKU TV </p>
+                        </div>
+                        <div class="testimonies_details__decription">
+                            <div class="testimony">
+                                <div id="owl-carousel2" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="avatar" />
+                                        </div>
+                                        <h5> Amarachi </h5>
+                                        <p class="text-gray-3 py-1"> From our contents to our services they love what we do and here’s what they have to say about OTAKU TV </p>
+                                        <div class="icon">
+                                            <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.3748 3.24984C17.5342 3.25331 18.6451 3.71539 19.4648 4.53517C20.2846 5.35495 20.7467 6.46582 20.7502 7.62516V16.3748C20.7467 17.5342 20.2846 18.6451 19.4648 19.4648C18.6451 20.2846 17.5342 20.7467 16.3748 20.7502H7.62516C6.46582 20.7467 5.35495 20.2846 4.53517 19.4648C3.71539 18.6451 3.25331 17.5342 3.24984 16.3748V7.62516C3.25331 6.46582 3.71539 5.35495 4.53517 4.53517C5.35495 3.71539 6.46582 3.25331 7.62516 3.24984H16.3748ZM16.3748 1.5H7.62516C4.25625 1.5 1.5 4.25625 1.5 7.62516V16.3748C1.5 19.7437 4.25625 22.5 7.62516 22.5H16.3748C19.7437 22.5 22.5 19.7437 22.5 16.3748V7.62516C22.5 4.25625 19.7437 1.5 16.3748 1.5Z" fill="black"/>
+                                                    <path d="M17.6873 7.625C17.4277 7.625 17.1739 7.54802 16.9581 7.4038C16.7422 7.25958 16.574 7.0546 16.4747 6.81477C16.3753 6.57494 16.3493 6.31104 16.4 6.05644C16.4506 5.80184 16.5756 5.56798 16.7592 5.38442C16.9427 5.20087 17.1766 5.07586 17.4312 5.02522C17.6858 4.97458 17.9497 5.00057 18.1895 5.09991C18.4294 5.19925 18.6343 5.36747 18.7786 5.58331C18.9228 5.79915 18.9998 6.05291 18.9998 6.3125C19.0001 6.48496 18.9664 6.6558 18.9006 6.81521C18.8348 6.97462 18.7381 7.11945 18.6162 7.2414C18.4942 7.36335 18.3494 7.46002 18.19 7.52584C18.0306 7.59167 17.8597 7.62537 17.6873 7.625Z" fill="black"/>
+                                                    <path d="M12 8.49984C12.6923 8.49984 13.369 8.70512 13.9446 9.08973C14.5202 9.47433 14.9688 10.021 15.2337 10.6605C15.4986 11.3001 15.5679 12.0039 15.4329 12.6828C15.2978 13.3618 14.9645 13.9855 14.475 14.475C13.9855 14.9645 13.3618 15.2978 12.6828 15.4329C12.0039 15.568 11.3001 15.4986 10.6605 15.2337C10.021 14.9688 9.47433 14.5202 9.08973 13.9446C8.70512 13.369 8.49984 12.6923 8.49984 12C8.50084 11.072 8.86992 10.1823 9.52611 9.52611C10.1823 8.86992 11.072 8.50084 12 8.49984ZM12 6.75C10.9616 6.75 9.94661 7.05791 9.08326 7.63478C8.2199 8.21166 7.54699 9.0316 7.14963 9.99091C6.75227 10.9502 6.64831 12.0058 6.85088 13.0242C7.05345 14.0426 7.55347 14.9781 8.28769 15.7123C9.02191 16.4465 9.95737 16.9466 10.9758 17.1491C11.9942 17.3517 13.0498 17.2477 14.0091 16.8504C14.9684 16.453 15.7883 15.7801 16.3652 14.9167C16.9421 14.0534 17.25 13.0384 17.25 12C17.25 10.6076 16.6969 9.27226 15.7123 8.28769C14.7277 7.30312 13.3924 6.75 12 6.75Z" fill="black"/>
+                                                </svg>                                                  
+                                            </span>
+                                            <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.643 4.93659C22.808 5.30659 21.911 5.55659 20.968 5.66959C21.941 5.08738 22.669 4.17105 23.016 3.09159C22.1019 3.63458 21.1014 4.01678 20.058 4.22159C19.3564 3.47245 18.4271 2.97591 17.4143 2.80906C16.4016 2.64221 15.3621 2.81438 14.4572 3.29884C13.5524 3.7833 12.8328 4.55295 12.4102 5.48829C11.9875 6.42363 11.8855 7.47234 12.12 8.47159C10.2677 8.37858 8.45564 7.89714 6.80144 7.05849C5.14723 6.21985 3.68785 5.04275 2.51801 3.60359C2.11801 4.29359 1.88801 5.09359 1.88801 5.94559C1.88757 6.71258 2.07644 7.46783 2.43789 8.14432C2.79934 8.82081 3.32217 9.39763 3.96001 9.82359C3.22029 9.80005 2.49688 9.60017 1.85001 9.24059V9.30059C1.84994 10.3763 2.22204 11.419 2.90319 12.2516C3.58434 13.0842 4.53258 13.6555 5.58701 13.8686C4.9008 14.0543 4.18135 14.0817 3.48301 13.9486C3.78051 14.8742 4.36001 15.6836 5.14038 16.2635C5.92075 16.8434 6.86293 17.1648 7.83501 17.1826C6.18484 18.478 4.1469 19.1807 2.04901 19.1776C1.67739 19.1777 1.30609 19.156 0.937012 19.1126C3.06649 20.4818 5.54535 21.2084 8.07701 21.2056C16.647 21.2056 21.332 14.1076 21.332 7.95159C21.332 7.75159 21.327 7.54959 21.318 7.34959C22.2293 6.69056 23.0159 5.87448 23.641 4.93959L23.643 4.93659Z" fill="black"/>
+                                                </svg>                                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footnote">
+            <div class="container">
+                <div class="link">
+                    <div class="link_details">
+                        <p class="pb-3 text-gray-1">Quick Links</p>
+                        <div class="footnote_nav">
+                            <li><a href="#" class="nav-link">Home</a></li>
+                            <li><a href="#" class="nav-link">Swap</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                            <li><a href="#" class="nav-link">About</a></li>
+                        </div>
+                    </div>
+                    <div class="link_icon">
+                        <p class="pb-3 text-gray-1">Follow Us</p>
+                        <div class="footnote_social">
+                            <span class="text-gray-1">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.22075 1.38801C7.19825 1.34301 7.50992 1.33301 9.99992 1.33301C12.4899 1.33301 12.8016 1.34384 13.7783 1.38801C14.7549 1.43217 15.4216 1.58801 16.0049 1.81384C16.6158 2.04467 17.1699 2.40551 17.6283 2.87217C18.0949 3.32967 18.4549 3.88301 18.6849 4.49467C18.9116 5.07801 19.0666 5.74467 19.1116 6.71967C19.1566 7.69884 19.1666 8.01051 19.1666 10.4997C19.1666 12.9897 19.1558 13.3013 19.1116 14.2788C19.0674 15.2538 18.9116 15.9205 18.6849 16.5038C18.4549 17.1156 18.0943 17.6698 17.6283 18.128C17.1699 18.5947 16.6158 18.9547 16.0049 19.1847C15.4216 19.4113 14.7549 19.5663 13.7799 19.6113C12.8016 19.6563 12.4899 19.6663 9.99992 19.6663C7.50992 19.6663 7.19825 19.6555 6.22075 19.6113C5.24575 19.5672 4.57908 19.4113 3.99575 19.1847C3.38402 18.9546 2.82977 18.5941 2.37159 18.128C1.90524 17.6702 1.54435 17.1162 1.31409 16.5047C1.08825 15.9213 0.933252 15.2547 0.888252 14.2797C0.843252 13.3005 0.833252 12.9888 0.833252 10.4997C0.833252 8.00967 0.844085 7.69801 0.888252 6.72134C0.932419 5.74467 1.08825 5.07801 1.31409 4.49467C1.54469 3.88308 1.90585 3.3291 2.37242 2.87134C2.82995 2.40509 3.38365 2.04421 3.99492 1.81384C4.57825 1.58801 5.24492 1.43301 6.21992 1.38801H6.22075ZM13.7041 3.03801C12.7374 2.99384 12.4474 2.98467 9.99992 2.98467C7.55242 2.98467 7.26242 2.99384 6.29575 3.03801C5.40158 3.07884 4.91658 3.22801 4.59325 3.35384C4.16575 3.52051 3.85992 3.71801 3.53909 4.03884C3.23496 4.33472 3.0009 4.69491 2.85408 5.09301C2.72825 5.41634 2.57909 5.90134 2.53825 6.79551C2.49409 7.76217 2.48492 8.05217 2.48492 10.4997C2.48492 12.9472 2.49409 13.2372 2.53825 14.2038C2.57909 15.098 2.72825 15.583 2.85408 15.9063C3.00075 16.3038 3.23492 16.6647 3.53909 16.9605C3.83492 17.2647 4.19575 17.4988 4.59325 17.6455C4.91658 17.7713 5.40158 17.9205 6.29575 17.9613C7.26242 18.0055 7.55158 18.0147 9.99992 18.0147C12.4483 18.0147 12.7374 18.0055 13.7041 17.9613C14.5983 17.9205 15.0833 17.7713 15.4066 17.6455C15.8341 17.4788 16.1399 17.2813 16.4608 16.9605C16.7649 16.6647 16.9991 16.3038 17.1458 15.9063C17.2716 15.583 17.4208 15.098 17.4616 14.2038C17.5058 13.2372 17.5149 12.9472 17.5149 10.4997C17.5149 8.05217 17.5058 7.76217 17.4616 6.79551C17.4208 5.90134 17.2716 5.41634 17.1458 5.09301C16.9791 4.66551 16.7816 4.35967 16.4608 4.03884C16.1649 3.73473 15.8047 3.50068 15.4066 3.35384C15.0833 3.22801 14.5983 3.07884 13.7041 3.03801ZM8.82908 13.3255C9.48297 13.5977 10.2111 13.6344 10.889 13.4294C11.567 13.2244 12.1527 12.7904 12.5463 12.2015C12.9398 11.6126 13.1166 10.9054 13.0466 10.2006C12.9766 9.49579 12.6641 8.83715 12.1624 8.33717C11.8426 8.01757 11.4559 7.77285 11.0302 7.62063C10.6045 7.46841 10.1503 7.41247 9.70033 7.45685C9.25039 7.50123 8.81588 7.64482 8.42809 7.87728C8.0403 8.10974 7.70887 8.42529 7.45767 8.80122C7.20647 9.17714 7.04174 9.60408 6.97535 10.0513C6.90895 10.4985 6.94254 10.9549 7.0737 11.3876C7.20486 11.8203 7.43032 12.2185 7.73385 12.5536C8.03738 12.8887 8.41144 13.1523 8.82908 13.3255ZM6.66825 7.16801C7.10577 6.73049 7.62518 6.38343 8.19683 6.14664C8.76848 5.90986 9.38117 5.78799 9.99992 5.78799C10.6187 5.78799 11.2314 5.90986 11.803 6.14664C12.3747 6.38343 12.8941 6.73049 13.3316 7.16801C13.7691 7.60553 14.1162 8.12494 14.3529 8.69659C14.5897 9.26824 14.7116 9.88093 14.7116 10.4997C14.7116 11.1184 14.5897 11.7311 14.3529 12.3028C14.1162 12.8744 13.7691 13.3938 13.3316 13.8313C12.448 14.715 11.2495 15.2114 9.99992 15.2114C8.7503 15.2114 7.55186 14.715 6.66825 13.8313C5.78464 12.9477 5.28823 11.7493 5.28823 10.4997C5.28823 9.25006 5.78464 8.05162 6.66825 7.16801ZM15.7566 6.48967C15.865 6.3874 15.9518 6.26441 16.0118 6.12799C16.0719 5.99156 16.1039 5.84448 16.1061 5.69545C16.1083 5.54642 16.0805 5.39846 16.0245 5.26035C15.9685 5.12223 15.8853 4.99677 15.7799 4.89137C15.6745 4.78598 15.549 4.70281 15.4109 4.64677C15.2728 4.59074 15.1248 4.56299 14.9758 4.56516C14.8268 4.56733 14.6797 4.59939 14.5433 4.65942C14.4068 4.71946 14.2839 4.80625 14.1816 4.91467C13.9827 5.12553 13.8738 5.40561 13.878 5.69545C13.8822 5.98529 13.9992 6.26207 14.2042 6.46704C14.4092 6.67201 14.686 6.78903 14.9758 6.79326C15.2656 6.79748 15.5457 6.68858 15.7566 6.48967Z" fill="#828282"/>
+                                </svg> IG                            
+                            </span>
+                            <span class="text-gray-1">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.22075 1.38801C7.19825 1.34301 7.50992 1.33301 9.99992 1.33301C12.4899 1.33301 12.8016 1.34384 13.7783 1.38801C14.7549 1.43217 15.4216 1.58801 16.0049 1.81384C16.6158 2.04467 17.1699 2.40551 17.6283 2.87217C18.0949 3.32967 18.4549 3.88301 18.6849 4.49467C18.9116 5.07801 19.0666 5.74467 19.1116 6.71967C19.1566 7.69884 19.1666 8.01051 19.1666 10.4997C19.1666 12.9897 19.1558 13.3013 19.1116 14.2788C19.0674 15.2538 18.9116 15.9205 18.6849 16.5038C18.4549 17.1156 18.0943 17.6698 17.6283 18.128C17.1699 18.5947 16.6158 18.9547 16.0049 19.1847C15.4216 19.4113 14.7549 19.5663 13.7799 19.6113C12.8016 19.6563 12.4899 19.6663 9.99992 19.6663C7.50992 19.6663 7.19825 19.6555 6.22075 19.6113C5.24575 19.5672 4.57908 19.4113 3.99575 19.1847C3.38402 18.9546 2.82977 18.5941 2.37159 18.128C1.90524 17.6702 1.54435 17.1162 1.31409 16.5047C1.08825 15.9213 0.933252 15.2547 0.888252 14.2797C0.843252 13.3005 0.833252 12.9888 0.833252 10.4997C0.833252 8.00967 0.844085 7.69801 0.888252 6.72134C0.932419 5.74467 1.08825 5.07801 1.31409 4.49467C1.54469 3.88308 1.90585 3.3291 2.37242 2.87134C2.82995 2.40509 3.38365 2.04421 3.99492 1.81384C4.57825 1.58801 5.24492 1.43301 6.21992 1.38801H6.22075ZM13.7041 3.03801C12.7374 2.99384 12.4474 2.98467 9.99992 2.98467C7.55242 2.98467 7.26242 2.99384 6.29575 3.03801C5.40158 3.07884 4.91658 3.22801 4.59325 3.35384C4.16575 3.52051 3.85992 3.71801 3.53909 4.03884C3.23496 4.33472 3.0009 4.69491 2.85408 5.09301C2.72825 5.41634 2.57909 5.90134 2.53825 6.79551C2.49409 7.76217 2.48492 8.05217 2.48492 10.4997C2.48492 12.9472 2.49409 13.2372 2.53825 14.2038C2.57909 15.098 2.72825 15.583 2.85408 15.9063C3.00075 16.3038 3.23492 16.6647 3.53909 16.9605C3.83492 17.2647 4.19575 17.4988 4.59325 17.6455C4.91658 17.7713 5.40158 17.9205 6.29575 17.9613C7.26242 18.0055 7.55158 18.0147 9.99992 18.0147C12.4483 18.0147 12.7374 18.0055 13.7041 17.9613C14.5983 17.9205 15.0833 17.7713 15.4066 17.6455C15.8341 17.4788 16.1399 17.2813 16.4608 16.9605C16.7649 16.6647 16.9991 16.3038 17.1458 15.9063C17.2716 15.583 17.4208 15.098 17.4616 14.2038C17.5058 13.2372 17.5149 12.9472 17.5149 10.4997C17.5149 8.05217 17.5058 7.76217 17.4616 6.79551C17.4208 5.90134 17.2716 5.41634 17.1458 5.09301C16.9791 4.66551 16.7816 4.35967 16.4608 4.03884C16.1649 3.73473 15.8047 3.50068 15.4066 3.35384C15.0833 3.22801 14.5983 3.07884 13.7041 3.03801ZM8.82908 13.3255C9.48297 13.5977 10.2111 13.6344 10.889 13.4294C11.567 13.2244 12.1527 12.7904 12.5463 12.2015C12.9398 11.6126 13.1166 10.9054 13.0466 10.2006C12.9766 9.49579 12.6641 8.83715 12.1624 8.33717C11.8426 8.01757 11.4559 7.77285 11.0302 7.62063C10.6045 7.46841 10.1503 7.41247 9.70033 7.45685C9.25039 7.50123 8.81588 7.64482 8.42809 7.87728C8.0403 8.10974 7.70887 8.42529 7.45767 8.80122C7.20647 9.17714 7.04174 9.60408 6.97535 10.0513C6.90895 10.4985 6.94254 10.9549 7.0737 11.3876C7.20486 11.8203 7.43032 12.2185 7.73385 12.5536C8.03738 12.8887 8.41144 13.1523 8.82908 13.3255ZM6.66825 7.16801C7.10577 6.73049 7.62518 6.38343 8.19683 6.14664C8.76848 5.90986 9.38117 5.78799 9.99992 5.78799C10.6187 5.78799 11.2314 5.90986 11.803 6.14664C12.3747 6.38343 12.8941 6.73049 13.3316 7.16801C13.7691 7.60553 14.1162 8.12494 14.3529 8.69659C14.5897 9.26824 14.7116 9.88093 14.7116 10.4997C14.7116 11.1184 14.5897 11.7311 14.3529 12.3028C14.1162 12.8744 13.7691 13.3938 13.3316 13.8313C12.448 14.715 11.2495 15.2114 9.99992 15.2114C8.7503 15.2114 7.55186 14.715 6.66825 13.8313C5.78464 12.9477 5.28823 11.7493 5.28823 10.4997C5.28823 9.25006 5.78464 8.05162 6.66825 7.16801ZM15.7566 6.48967C15.865 6.3874 15.9518 6.26441 16.0118 6.12799C16.0719 5.99156 16.1039 5.84448 16.1061 5.69545C16.1083 5.54642 16.0805 5.39846 16.0245 5.26035C15.9685 5.12223 15.8853 4.99677 15.7799 4.89137C15.6745 4.78598 15.549 4.70281 15.4109 4.64677C15.2728 4.59074 15.1248 4.56299 14.9758 4.56516C14.8268 4.56733 14.6797 4.59939 14.5433 4.65942C14.4068 4.71946 14.2839 4.80625 14.1816 4.91467C13.9827 5.12553 13.8738 5.40561 13.878 5.69545C13.8822 5.98529 13.9992 6.26207 14.2042 6.46704C14.4092 6.67201 14.686 6.78903 14.9758 6.79326C15.2656 6.79748 15.5457 6.68858 15.7566 6.48967Z" fill="#828282"/>
+                                </svg> TW                           
+                            </span>
+                            <span class="text-gray-1">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.22075 1.38801C7.19825 1.34301 7.50992 1.33301 9.99992 1.33301C12.4899 1.33301 12.8016 1.34384 13.7783 1.38801C14.7549 1.43217 15.4216 1.58801 16.0049 1.81384C16.6158 2.04467 17.1699 2.40551 17.6283 2.87217C18.0949 3.32967 18.4549 3.88301 18.6849 4.49467C18.9116 5.07801 19.0666 5.74467 19.1116 6.71967C19.1566 7.69884 19.1666 8.01051 19.1666 10.4997C19.1666 12.9897 19.1558 13.3013 19.1116 14.2788C19.0674 15.2538 18.9116 15.9205 18.6849 16.5038C18.4549 17.1156 18.0943 17.6698 17.6283 18.128C17.1699 18.5947 16.6158 18.9547 16.0049 19.1847C15.4216 19.4113 14.7549 19.5663 13.7799 19.6113C12.8016 19.6563 12.4899 19.6663 9.99992 19.6663C7.50992 19.6663 7.19825 19.6555 6.22075 19.6113C5.24575 19.5672 4.57908 19.4113 3.99575 19.1847C3.38402 18.9546 2.82977 18.5941 2.37159 18.128C1.90524 17.6702 1.54435 17.1162 1.31409 16.5047C1.08825 15.9213 0.933252 15.2547 0.888252 14.2797C0.843252 13.3005 0.833252 12.9888 0.833252 10.4997C0.833252 8.00967 0.844085 7.69801 0.888252 6.72134C0.932419 5.74467 1.08825 5.07801 1.31409 4.49467C1.54469 3.88308 1.90585 3.3291 2.37242 2.87134C2.82995 2.40509 3.38365 2.04421 3.99492 1.81384C4.57825 1.58801 5.24492 1.43301 6.21992 1.38801H6.22075ZM13.7041 3.03801C12.7374 2.99384 12.4474 2.98467 9.99992 2.98467C7.55242 2.98467 7.26242 2.99384 6.29575 3.03801C5.40158 3.07884 4.91658 3.22801 4.59325 3.35384C4.16575 3.52051 3.85992 3.71801 3.53909 4.03884C3.23496 4.33472 3.0009 4.69491 2.85408 5.09301C2.72825 5.41634 2.57909 5.90134 2.53825 6.79551C2.49409 7.76217 2.48492 8.05217 2.48492 10.4997C2.48492 12.9472 2.49409 13.2372 2.53825 14.2038C2.57909 15.098 2.72825 15.583 2.85408 15.9063C3.00075 16.3038 3.23492 16.6647 3.53909 16.9605C3.83492 17.2647 4.19575 17.4988 4.59325 17.6455C4.91658 17.7713 5.40158 17.9205 6.29575 17.9613C7.26242 18.0055 7.55158 18.0147 9.99992 18.0147C12.4483 18.0147 12.7374 18.0055 13.7041 17.9613C14.5983 17.9205 15.0833 17.7713 15.4066 17.6455C15.8341 17.4788 16.1399 17.2813 16.4608 16.9605C16.7649 16.6647 16.9991 16.3038 17.1458 15.9063C17.2716 15.583 17.4208 15.098 17.4616 14.2038C17.5058 13.2372 17.5149 12.9472 17.5149 10.4997C17.5149 8.05217 17.5058 7.76217 17.4616 6.79551C17.4208 5.90134 17.2716 5.41634 17.1458 5.09301C16.9791 4.66551 16.7816 4.35967 16.4608 4.03884C16.1649 3.73473 15.8047 3.50068 15.4066 3.35384C15.0833 3.22801 14.5983 3.07884 13.7041 3.03801ZM8.82908 13.3255C9.48297 13.5977 10.2111 13.6344 10.889 13.4294C11.567 13.2244 12.1527 12.7904 12.5463 12.2015C12.9398 11.6126 13.1166 10.9054 13.0466 10.2006C12.9766 9.49579 12.6641 8.83715 12.1624 8.33717C11.8426 8.01757 11.4559 7.77285 11.0302 7.62063C10.6045 7.46841 10.1503 7.41247 9.70033 7.45685C9.25039 7.50123 8.81588 7.64482 8.42809 7.87728C8.0403 8.10974 7.70887 8.42529 7.45767 8.80122C7.20647 9.17714 7.04174 9.60408 6.97535 10.0513C6.90895 10.4985 6.94254 10.9549 7.0737 11.3876C7.20486 11.8203 7.43032 12.2185 7.73385 12.5536C8.03738 12.8887 8.41144 13.1523 8.82908 13.3255ZM6.66825 7.16801C7.10577 6.73049 7.62518 6.38343 8.19683 6.14664C8.76848 5.90986 9.38117 5.78799 9.99992 5.78799C10.6187 5.78799 11.2314 5.90986 11.803 6.14664C12.3747 6.38343 12.8941 6.73049 13.3316 7.16801C13.7691 7.60553 14.1162 8.12494 14.3529 8.69659C14.5897 9.26824 14.7116 9.88093 14.7116 10.4997C14.7116 11.1184 14.5897 11.7311 14.3529 12.3028C14.1162 12.8744 13.7691 13.3938 13.3316 13.8313C12.448 14.715 11.2495 15.2114 9.99992 15.2114C8.7503 15.2114 7.55186 14.715 6.66825 13.8313C5.78464 12.9477 5.28823 11.7493 5.28823 10.4997C5.28823 9.25006 5.78464 8.05162 6.66825 7.16801ZM15.7566 6.48967C15.865 6.3874 15.9518 6.26441 16.0118 6.12799C16.0719 5.99156 16.1039 5.84448 16.1061 5.69545C16.1083 5.54642 16.0805 5.39846 16.0245 5.26035C15.9685 5.12223 15.8853 4.99677 15.7799 4.89137C15.6745 4.78598 15.549 4.70281 15.4109 4.64677C15.2728 4.59074 15.1248 4.56299 14.9758 4.56516C14.8268 4.56733 14.6797 4.59939 14.5433 4.65942C14.4068 4.71946 14.2839 4.80625 14.1816 4.91467C13.9827 5.12553 13.8738 5.40561 13.878 5.69545C13.8822 5.98529 13.9992 6.26207 14.2042 6.46704C14.4092 6.67201 14.686 6.78903 14.9758 6.79326C15.2656 6.79748 15.5457 6.68858 15.7566 6.48967Z" fill="#828282"/>
+                                </svg> WH                          
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <p class="text-gray-1"> 2021 All right Reserved (C) OtakuTV </p>
+            </div>
+        </footer>
+    </div>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+    <script>
+
+        $('#owl-carousel2').owlCarousel({
+            // loop: true,
+            // dots: true,
+            nav: true,
+            navText:["<div class='nav-btn prev-slide'>me</div>","<div class='nav-btn next-slide'>you</div>"],
+            items: 1,
+            // autoplay: true,
+            // autoplayTimeout: 3000,
+        })
+    </script>
 </body>
 </html>
-

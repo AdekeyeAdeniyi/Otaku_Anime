@@ -7,6 +7,7 @@ window.addEventListener('load', ()=>{
     const close = document.querySelector('#close');
     const fileUpload = document.querySelector('#input-file');
     const container = document.querySelector('.footer');
+    const lop = document.querySelector('#owl-carousel');
 
     
     open.addEventListener('click', (e)=>{
@@ -43,3 +44,4 @@ window.addEventListener('load', ()=>{
     }
 
 });
+

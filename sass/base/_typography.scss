@@ -1,25 +1,35 @@
 h1,
 .h1,
+h2,
+.h2,
 h3,
-.h3{
+.h3,
+h4,
+.h4{
     font-family: 'PT Serif', serif;
     font-weight: 700;
 }
-h1,.h1{
-    color: $white;
+
+h1, .h1 {
     font-size: $h1-font-size;
 }
 
-
+h2,.h2{
+    font-size: $h2-font-size;
+}
 
 h3,.h3{
-    color: $dark;
+    // color: $dark;
     font-size: $h3-font-size;
+}
+
+h4,.h4{
+    // color: $dark;
+    font-size: $h4-font-size;
 }
 
 p{
     font-size: $font-size-md;
-    color: $gray;
     font-weight: 400;
 }
 
