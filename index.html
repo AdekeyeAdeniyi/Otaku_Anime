@@ -253,11 +253,28 @@
 
         $('#owl-carousel').owlCarousel({
             loop: true,
-            dots: true,
-            nav: true,
-            items: 6,
             autoplay: true,
             autoplayTimeout: 3000,
+            responsiveClass:true,
+            responsive:{
+                576:{
+                    items: 2,
+                    nav: true,
+                },
+                768:{
+                    items: 4,
+                    nav: true
+                },
+                992: {
+                    items: 6,
+                    nav: true,
+                }
+            }
+        })
+
+        $('#owl-carousel2').owlCarousel({
+            nav: true,
+            items: 1,
         })
     </script>
 </body>
