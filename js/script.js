@@ -9,6 +9,9 @@ window.addEventListener('load', ()=>{
     const container = document.querySelector('.footer');
     const lop = document.querySelector('#owl-carousel');
 
+    const carouselLoop = document.querySelector('#owl-carousel')
+    const carouselSwipe = document.querySelector('#owl-carousel2')
+
     
     open.addEventListener('click', (e)=>{
         open.classList.remove('active');
@@ -43,5 +46,6 @@ window.addEventListener('load', ()=>{
         }
     }
 
+    
 });
 
